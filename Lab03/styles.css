@@ -49,23 +49,20 @@ h2 {
     border-radius: 3px;
 }
 .experience-list {
-    font-size: smaller;
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 3px;
+    font-size: initial;
 }
-#job-link {
+.link {
     text-decoration: none;
     font-weight: bold;
 }
-#job-link:hover {
+.link:hover {
     text-decoration: underline;
     font-weight: bold;
 }
-#job-link:active {
+.link:active {
     color: purple;
 }
-#job-link:visited {
+.link:visited {
     color: rgb(41, 89, 1);
 }
 @media (max-width: 600px) {
