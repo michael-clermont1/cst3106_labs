@@ -1,4 +1,4 @@
-# Joe Smith's Portfolio Design System Documentation
+# Michael Clermont's Portfolio Design System Documentation
 
 This documentation provides a clear and simplified overview of the design system used for the portfolio project. It includes colors, typography, components, and layouts, along with screenshots of mock-ups for clear communication of the design.
 
