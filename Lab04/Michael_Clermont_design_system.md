@@ -30,6 +30,7 @@ Very basic color palette with a combination of white and black mixed with blue/g
 ### Anchor
 - **Design:** Normal text with a underline when hovered and a greenish color pattern.
 - **Mock-up Screenshot:**
+
 ![Anchor Mock-up](anchor.png)
 
 ## **Conclusion**
