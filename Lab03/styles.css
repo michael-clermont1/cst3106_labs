@@ -60,10 +60,10 @@ h2 {
     font-weight: bold;
 }
 .link:active {
-    color: purple;
+    color: #800080;
 }
 .link:visited {
-    color: rgb(41, 89, 1);
+    color: #295901;
 }
 .progress-container {
     width: 300px;
@@ -131,20 +131,6 @@ h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
-  
-  
-  /* Unique animations for each bar */
-  .progress-item:nth-child(1) .progress-fill { animation-duration: 2.5s; }
-  .progress-item:nth-child(2) .progress-fill { animation-duration: 3s; }
-  .progress-item:nth-child(3) .progress-fill { animation-duration: 3.5s; }
-  .progress-item:nth-child(4) .progress-fill { animation-duration: 4s; }
-  .progress-item:nth-child(5) .progress-fill { animation-duration: 4.5s; }
-  
-  .progress-item:nth-child(1) .progress-fill { animation-name: fill-bar-1; }
-  .progress-item:nth-child(2) .progress-fill { animation-name: fill-bar-2; }
-  .progress-item:nth-child(3) .progress-fill { animation-name: fill-bar-3; }
-  .progress-item:nth-child(4) .progress-fill { animation-name: fill-bar-4; }
-  .progress-item:nth-child(5) .progress-fill { animation-name: fill-bar-5; }
   
   @keyframes fill-bar-1 { 100% { width: 100%; } }
   @keyframes fill-bar-2 { 100% { width: 100%; } }
