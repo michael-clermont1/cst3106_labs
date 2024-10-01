@@ -1,0 +1,168 @@
+/* Resume customization */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1, h2 {
+    color: #2c3e50;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.job {
+    margin-bottom: 15px;
+}
+.job-title {
+    font-weight: bold;
+}
+.job-date {
+    float: right;
+    font-style: italic;
+}
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-list li {
+    background-color: #ecf0f1;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.experience-list {
+    font-size: initial;
+}
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.link:active {
+    color: purple;
+}
+.link:visited {
+    color: rgb(41, 89, 1);
+}
+.progress-container {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-item {
+    margin-bottom: 20px;
+  }
+  
+  .progress-description {
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fill-bar 3s ease-out forwards;
+  }
+  
+  .progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  
+  .progress-percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  
+  /* Unique animations for each bar */
+  .progress-item:nth-child(1) .progress-fill { animation-duration: 2.5s; }
+  .progress-item:nth-child(2) .progress-fill { animation-duration: 3s; }
+  .progress-item:nth-child(3) .progress-fill { animation-duration: 3.5s; }
+  .progress-item:nth-child(4) .progress-fill { animation-duration: 4s; }
+  .progress-item:nth-child(5) .progress-fill { animation-duration: 4.5s; }
+  
+  .progress-item:nth-child(1) .progress-fill { animation-name: fill-bar-1; }
+  .progress-item:nth-child(2) .progress-fill { animation-name: fill-bar-2; }
+  .progress-item:nth-child(3) .progress-fill { animation-name: fill-bar-3; }
+  .progress-item:nth-child(4) .progress-fill { animation-name: fill-bar-4; }
+  .progress-item:nth-child(5) .progress-fill { animation-name: fill-bar-5; }
+  
+  @keyframes fill-bar-1 { 100% { width: 100%; } }
+  @keyframes fill-bar-2 { 100% { width: 100%; } }
+  @keyframes fill-bar-3 { 100% { width: 75%; } }
+  @keyframes fill-bar-4 { 100% { width: 80%; } }
+  @keyframes fill-bar-5 { 100% { width: 90%; } }
+  
+  .progress-item:nth-child(1) .progress-percentage::after { content: '100%'; }
+  .progress-item:nth-child(2) .progress-percentage::after { content: '100%'; }
+  .progress-item:nth-child(3) .progress-percentage::after { content: '75%'; }
+  .progress-item:nth-child(4) .progress-percentage::after { content: '80%'; }
+  .progress-item:nth-child(5) .progress-percentage::after { content: '90%'; }
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .job-date {
+        float: none;
+        display: block;
+    }
+}
